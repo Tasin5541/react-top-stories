@@ -1,0 +1,120 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+html {
+  //font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  font-family: Segoe UI, SegoeUI !important;
+}
+
+.app-root {
+  display: flex;
+}
+
+//0.875rem
+//font size start
+.MuiInputBase-root {
+  font-size: 0.875rem !important;
+}
+
+.MuiFormLabel-root {
+  font-size: 0.875rem !important;
+}
+
+.MuiTypography-body1 {
+  font-size: 0.875rem !important;
+}
+
+.MuiFormControlLabel-root {
+  margin-bottom: 0 !important;
+}
+
+.MuiMenuItem-root {
+  font-size: 0.875rem !important;
+}
+
+label + .MuiInput-formControl {
+  margin-top: 13px !important;
+}
+
+//outlined textbox
+.MuiOutlinedInput-notchedOutline {
+  border-color: #dedcdb !important;
+  border-top-color: rgb(222, 220, 219);
+  border-right-color: rgb(222, 220, 219);
+  border-bottom-color: rgb(222, 220, 219);
+  border-left-color: rgb(222, 220, 219);
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #3f51bf !important;
+  border-top-color: rgb(63, 81, 181);
+  border-right-color: rgb(63, 81, 181);
+  border-bottom-color: rgb(63, 81, 181);
+  border-left-color: rgb(63, 81, 181);
+}
+
+html {
+  overflow-y: scroll;
+}
+
+//bootstrap
+.use-bootstrap {
+  @import "bootstrap/scss/functions";
+  @import "bootstrap/scss/variables";
+  @import "bootstrap/scss/mixins";
+  @import "bootstrap/scss/utilities";
+
+  // Layout & components
+  @import "bootstrap/scss/root";
+  @import "bootstrap/scss/images";
+  @import "bootstrap/scss/containers";
+  @import "bootstrap/scss/grid";
+  @import "bootstrap/scss/tables";
+  @import "bootstrap/scss/forms";
+  @import "bootstrap/scss/buttons";
+  @import "bootstrap/scss/transitions";
+  @import "bootstrap/scss/dropdown";
+  @import "bootstrap/scss/button-group";
+  @import "bootstrap/scss/nav";
+  @import "bootstrap/scss/navbar";
+  @import "bootstrap/scss/card";
+  @import "bootstrap/scss/accordion";
+  @import "bootstrap/scss/breadcrumb";
+  @import "bootstrap/scss/pagination";
+  @import "bootstrap/scss/badge";
+  @import "bootstrap/scss/alert";
+  @import "bootstrap/scss/progress";
+  @import "bootstrap/scss/list-group";
+  @import "bootstrap/scss/close";
+  @import "bootstrap/scss/toasts";
+  @import "bootstrap/scss/modal";
+  @import "bootstrap/scss/tooltip";
+  @import "bootstrap/scss/popover";
+  @import "bootstrap/scss/carousel";
+  @import "bootstrap/scss/spinners";
+  @import "bootstrap/scss/offcanvas";
+  @import "bootstrap/scss/placeholders";
+
+  // Helpers
+  @import "bootstrap/scss/helpers";
+
+  // Utilities
+  @import "bootstrap/scss/utilities/api";
+
+  .bg-light {
+    background-color: white !important;
+  }
+}
