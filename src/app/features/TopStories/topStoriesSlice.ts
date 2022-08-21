@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { getStories } from "../../../services/story.service";
 import { Story } from "../../../types/Story";
 import { sessionStore, sessionGetData } from "../../../utils/helpers/session";
+import snackActions from "../../components/SnackBarUtils/SnackBarUtils";
 type InitialState = {
   stories: Story[];
   currentEndpoint: string;
@@ -16,7 +17,6 @@ const topStoriesSlice = createSlice({
   initialState,
   reducers: {
     getCachedStories: (state, action: PayloadAction<string>) => {
-      state.currentEndpoint = action.payload;
       state.stories = sessionGetData(action.payload) || [];
     },
     filterStories: (state, action: PayloadAction<string>) => {
@@ -25,6 +25,9 @@ const topStoriesSlice = createSlice({
     },
     resetSearch: (state) => {
       state.stories = sessionGetData(state.currentEndpoint) || [];
+    },
+    setEndpoint: (state, action: PayloadAction<string>) => {
+      state.currentEndpoint = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -58,11 +61,11 @@ const topStoriesSlice = createSlice({
     });
     builder.addCase(getStories.rejected, (state, { payload }) => {
       state.stories = [];
-      //snackActions.error(payload || "Something went wrong");
+      snackActions.error(payload || "Something went wrong");
     });
   },
 });
 
 export default topStoriesSlice.reducer;
 
-export const { getCachedStories, filterStories, resetSearch } = topStoriesSlice.actions;
+export const { getCachedStories, filterStories, resetSearch, setEndpoint } = topStoriesSlice.actions;
