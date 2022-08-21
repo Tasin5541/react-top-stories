@@ -10,11 +10,11 @@ A web app for fetching top stories using the NYT Top Stories API
 
 ## Live Demo
 
-See a [live demo]("https://main--fantastic-arithmetic-f828ab.netlify.app/") on Netlify
+See a [live demo](https://main--fantastic-arithmetic-f828ab.netlify.app/) on Netlify
 
 ## Implementation of the NYT Top Stories API in .Net
 
-See [this repo]("https://github.com/Tasin5541/top-stories-api") for the implementation
+See [this repo](https://github.com/Tasin5541/top-stories-api) for the implementation
 
 ## Installation
 
