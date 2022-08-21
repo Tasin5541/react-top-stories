@@ -2,6 +2,12 @@
 
 A web app for fetching top stories using the NYT Top Stories API
 
+<p align="center"> 
+    <a href="https://main--fantastic-arithmetic-f828ab.netlify.app/" target="_blank">
+    <img src="topstories.png" align="center"></img>
+    </a>
+</p>
+
 - **[React](https://facebook.github.io/react/)** (18.x)
 - **[Vite](https://vitejs.dev/)** (5.x)
 - **[Typescript](https://www.typescriptlang.org/)** (4.x)
