@@ -27,6 +27,8 @@ function TopStories(props: storyProps) {
   };
 
   useEffect(() => {
+    //scroll to top on route change
+    window.scrollTo(0, 0);
     fetchStories(endpoint);
   }, [endpoint]);
 
