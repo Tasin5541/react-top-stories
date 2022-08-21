@@ -21,7 +21,8 @@ const topStoriesSlice = createSlice({
     },
     filterStories: (state, action: PayloadAction<string>) => {
       let stories = sessionGetData(state.currentEndpoint) || [];
-      state.stories = stories.filter((s) => s.title.toLowerCase().includes(action.payload) || s.abstract.toLowerCase().includes(action.payload));
+      let searchTerm = action.payload.toLowerCase();
+      state.stories = stories.filter((s) => s.title.toLowerCase().includes(searchTerm) || s.abstract.toLowerCase().includes(searchTerm));
     },
     resetSearch: (state) => {
       state.stories = sessionGetData(state.currentEndpoint) || [];
