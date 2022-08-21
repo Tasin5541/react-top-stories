@@ -32,6 +32,9 @@ const topStoriesSlice = createSlice({
   },
   extraReducers: (builder) => {
     //get stories
+    builder.addCase(getStories.pending, (state, { payload }) => {
+      state.stories = [];
+    });
     builder.addCase(getStories.fulfilled, (state, { payload }) => {
       state.stories = payload.results;
       switch (payload.section) {
