@@ -1,10 +1,16 @@
 # React Top Stories
 
+A web app for fetching top stories using the NYT Top Stories API
+
 - **[React](https://facebook.github.io/react/)** (18.x)
 - **[Vite](https://vitejs.dev/)** (5.x)
 - **[Typescript](https://www.typescriptlang.org/)** (4.x)
 - [SASS](http://sass-lang.com/) support
 - Production build script
+
+## Live Demo
+
+See a [live demo]("https://main--fantastic-arithmetic-f828ab.netlify.app/") on Netlify
 
 ## Installation
 
